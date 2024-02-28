@@ -52,7 +52,7 @@ kubectl apply -f service.yaml
 ### Accessing Your Application
 Since LoadBalancer might not work as expected on Docker Desktop, use port forwarding:
 ```bash
-kubectl port-forward service/hello-kubernetes-service 8080:80
+kubectl port-forward service/hello-kubernetes-service 8000:80
 ```
 
 Access your application by navigating to http://localhost:8000 in your web browser.

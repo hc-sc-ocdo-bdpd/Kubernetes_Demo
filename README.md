@@ -56,3 +56,10 @@ kubectl port-forward service/hello-kubernetes-service 8080:80
 ```
 
 Access your application by navigating to http://localhost:8000 in your web browser.
+
+
+## Deleting the Deployment
+When you are finished, delete the deployment:
+```bash
+kubectl delete deployment hello-kubernetes
+```

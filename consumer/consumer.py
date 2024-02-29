@@ -11,7 +11,7 @@ class Consumer:
         self._init_kafka_consumer()
 
     def _init_kafka_consumer(self):
-        self.kafka_host = "kafka-local.kafkaplaypen.svc.cluster.local:9092"
+        self.kafka_host = "kafka.default.svc.cluster.local:9092"
         self.kafka_topic = "my-topic"
         self.consumer = KafkaConsumer(
             "my-topic",

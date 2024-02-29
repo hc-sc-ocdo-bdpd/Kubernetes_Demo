@@ -4,10 +4,32 @@ This README outlines the steps to build, run, and deploy a simple "Hello World" 
 
 ## Prerequisites
 
-- Docker Desktop with Kubernetes enabled
-- kubectl command-line tool (comes with Docker Desktop)
+- Ubuntu VM
+- Docker Desktop 
+- kubectl 
 
 ## Getting Started
+
+### Install kubectl
+
+Follow instructions here: https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
+### Install minikube
+
+Follow instructions here: https://minikube.sigs.k8s.io/docs/start/
+
+
+## New sessions
+
+Run the following commands
+
+
+```bash
+minikube start
+docker login
+```
+
+Then follow this tutorial: https://medium.com/@aris.david/running-kafka-producer-and-consumer-on-a-local-kubernetes-cluster-fe85df25ca92
 
 ### Build the Docker Image
 
